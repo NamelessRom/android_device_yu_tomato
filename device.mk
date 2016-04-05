@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    YUDoze
+
 # Wifi
 PRODUCT_PACKAGES += \
     libwcnss_qmi
