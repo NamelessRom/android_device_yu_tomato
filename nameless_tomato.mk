@@ -17,6 +17,9 @@ $(call inherit-product, device/yu/tomato/full_tomato.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/nameless/config/common.mk)
 
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/yu/tomato/full_tomato.mk)
+
 PRODUCT_NAME := nameless_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
