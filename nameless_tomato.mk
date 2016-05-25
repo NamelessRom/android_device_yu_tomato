@@ -17,8 +17,8 @@ $(call inherit-product, device/yu/tomato/full_tomato.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/nameless/config/common.mk)
 
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/yu/tomato/full_tomato.mk)
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
 PRODUCT_NAME := nameless_tomato
 BOARD_VENDOR := yu
